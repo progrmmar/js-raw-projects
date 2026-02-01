@@ -8,7 +8,7 @@
 const sumPrimes = number => {
     const primeNumbers = [];
 
-    if (number === 2) return number;
+    if (number < 2) return 0;
 
     let derivative = [];
     for (let n = 2; n <= number; n++) {
