@@ -29,4 +29,3 @@ const sumPrimes = number => {
 
     return total;
 };
-console.log(sumPrimes(5));
