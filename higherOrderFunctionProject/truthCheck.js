@@ -5,8 +5,8 @@
     Date: 02-02-2036
 */
 
-const truthCheck = (arr, validator) => {
-    return arr.every(element => {
-        return element[validator];
+const truthCheck = (collection, pre) => {
+    return collection.every(element => {
+        return element[pre];
     });
 };
