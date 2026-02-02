@@ -30,3 +30,26 @@ const whatIsInAName = (catalog, payload) => {
 );*/
 
 // console.log(whatIsInAName([], ));
+
+// Alternating way for searching algorithm
+
+const search = (catalog, payload) => {
+    const payloadKeys = Object.keys(payload);
+
+    return catalog.filter(element => {
+        const elementKeys = Object.keys(element);
+        return payloadKeys.every(payloadKey => {
+            return (
+                elementKeys.includes(payloadKey) &&
+                payload[payloadKey] === element[payloadKey]
+            );
+        });
+    });
+};
+
+console.log(
+    search(
+        [{ apple: 1, bat: 2 }, { apple: 1 }, { apple: 1, bat: 2, cookie: 2 }],
+        { apple: 1, cookie: 2 }
+    )
+);
