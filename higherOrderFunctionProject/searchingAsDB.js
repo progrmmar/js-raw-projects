@@ -47,9 +47,10 @@ const search = (catalog, payload) => {
     });
 };
 
-console.log(
+/*console.log(
     search(
         [{ apple: 1, bat: 2 }, { apple: 1 }, { apple: 1, bat: 2, cookie: 2 }],
         { apple: 1, cookie: 2 }
     )
 );
+*/
