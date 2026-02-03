@@ -1,0 +1,27 @@
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+#story-container {
+  width: 80%;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+  margin: 1.5rem auto;
+  padding: 1.5rem 2rem;
+  background: #555;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn-container button {
+  width: 40%;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+#result {
+  color: white;
+  margin-top: 2rem;
+}
