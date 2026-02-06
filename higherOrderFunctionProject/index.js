@@ -1,11 +1,13 @@
-// recursion
-const sum = n => {
-  let total 
-    if (n === 0) return 0;
-    
-    return sum(n - 1);
-};
+const users = [
+    { name: "Arjun", city: "Thakurgaon" },
+    { name: "Aditi", city: "Thakurgaon" },
+    { name: "Arpita", city: "Jolpaiguri" },
+    { name: "Dipok", city: "Rangpur" }
+];
 
-console.log(sum(4));
+const result = users.reduce((acc, user) => {
+    acc[user.city] = [].push(user);
+    return acc;
+}, {});
 
-//checking what happens
+console.log(result);
