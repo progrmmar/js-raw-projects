@@ -1,7 +1,3 @@
-const container = document.getElementById("container");
+const regex = /freeCodeCamp/;
 
-/*console.log(container.innerText);
-console.log(container.textContent);*/
-
-console.log(typeof window);
-console.log(typeof navigator);
+console.log("I use freeCodeCamp freeCodeCamp".match(regex));
