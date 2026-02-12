@@ -26,7 +26,11 @@ const checkPattern = () => {
     const regex = new RegExp(regexPattern.value, flag);
 
     const matched = stringToTest.innerText.match(regex);
-    testResult.value = matched;
+    if(matched) {
+      testResult.innerText = matched;
+    }else{
+      testResult.innerText = "no match!"
+    }
     stringToTest.innerHTML = stringToTest.innerText.replace(
         regex,
         content => `<span class="highlight">${content}</span>`
