@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: rgba(5, 5, 5, 0.8);
+  --test-button-color: rgb(255, 180, 0);
+  --border: 1px solid grey
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.highlight {
+  color: rgb(100, 150, 0);
+}
+
+body {
+  background: var(--background-color);
+  color: white;
+}
+
+#heading-text {
+  text-align: center;
+}
+
+main {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+main #pattern-container,
+main #test-string-container,
+main #result-container {
+  background: #888;
+  padding: 1rem 1.5rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+}
+
+main #pattern-container h2,
+main #test-string-container h2,
+main #result-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+main #pattern-container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+main #pattern-container_patterns {
+  flex: 1;
+  background: #999;
+}
+
+main #pattern-container_patterns #pattern {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.3rem;
+  outline: none;
+}
+
+main #pattern-container_flags {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 0.7;
+}
+main #pattern-container_flags ul li{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.2rem 0;
+}
+
+/* test string styles*/
+main #test-string-container #test-string{
+  display: block;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: black;
+  outline: none;
+}
+main #test-string-container button {
+  margin-top: 0.5rem;
+  padding: 0.3rem 1rem;
+  background: var(--test-button-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+/*styling result section*/
+main #result-container h2 {
+  margin-top: 1rem;
+}
+main #result-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main #result-container #result {
+  width: 80%;
+  height: 2rem;
+  text-indent: 0.5rem;
+}
