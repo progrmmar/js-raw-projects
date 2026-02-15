@@ -18,6 +18,15 @@ galleryItems.forEach(item => {
     });
 });
 
+const closeLightbox = () => {
+  if(lightbox.style.display === "flex"){
+    lightbox.style.display = "none"
+  }
+}
+
 closeBtn.addEventListener("click", () => {
-    lightbox.style.display = "none";
+    closeLightbox()
+});
+lightbox.addEventListener("click", () => {
+    closeLightbox()
 });
